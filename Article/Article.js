@@ -90,7 +90,7 @@ const data = [
 
 /* Step 1: Write a component called 'articleMaker' to create an article. You want your component to return markup like the template below: 
 
-  <div class="article">
+ s <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
 
@@ -138,10 +138,11 @@ function articleMaker(object){
   content1.textContent = object.firstParagraph
   content2.textContent = object.secondParagraph
   content3.textContent = object.thirdParagraph
-  button.textContent = 'expand'
+  button.textContent = 'Click to Expand'
 
   button.addEventListener('click', event=>{
     article.classList.toggle('article-open')
+    button.textContent
   })
 
   return article
